@@ -9,5 +9,18 @@
   },
   "enabledPlugins": {
     "i-have-adhd@i-have-adhd": true
+  },
+  "permissions": {
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(rm -fr *)",
+      "Bash(sudo *)",
+      "Bash(chmod 777 *)",
+      "Bash(chmod -R 777 *)",
+      "Bash(ssh *)",
+      "Bash(* > /dev/sd*)",
+      "Bash(* > /dev/nvme*)",
+      "Bash(* > /dev/disk*)"
+    ]
   }
 }
