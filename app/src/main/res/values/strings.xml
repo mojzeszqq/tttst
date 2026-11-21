@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XB88 Rider</string>
+
+    <!-- Navigation -->
+    <string name="nav_garage">Garaż</string>
+    <string name="nav_settings">Ustawienia</string>
+
+    <!-- Garage -->
+    <string name="garage_title">Garaż</string>
+    <string name="garage_loading">Przygotowuję profil motocykla…</string>
+    <string name="garage_mth_label">Motogodziny (mth)</string>
+    <string name="garage_km_label">Przebieg (km)</string>
+    <string name="garage_update_mth">Aktualizuj mth / km</string>
+    <string name="garage_cheat_sheet_title">Ściągawka awaryjna</string>
+    <string name="garage_cheat_sheet_subtitle">Działa offline — w lesie, w żwirowni, bez zasięgu.</string>
+    <string name="garage_specs_title">Karta motocykla</string>
+    <string name="garage_specs_hint">Dotknij parametru, aby go edytować.</string>
+
+    <!-- Cheat sheet entries -->
+    <string name="cheat_fuse">Bezpiecznik główny</string>
+    <string name="cheat_fuse_hint">Woź zapasowy w narzędziówce!</string>
+    <string name="cheat_battery">Akumulator</string>
+    <string name="cheat_oil">Olej silnikowy</string>
+    <string name="cheat_tank">Bak paliwa</string>
+    <string name="cheat_tank_value">%1$s L</string>
+    <string name="cheat_tires_pressure">Ciśnienie opon (przód / tył)</string>
+    <string name="cheat_tires_pressure_value">%1$s / %2$s bar</string>
+    <string name="cheat_tire_sizes">Opony (przód / tył)</string>
+    <string name="cheat_tire_sizes_value">%1$s / %2$s</string>
+    <string name="cheat_chain">Łańcuch</string>
+    <string name="cheat_carb">Gaźnik</string>
+
+    <!-- Spec field labels -->
+    <string name="spec_model">Model</string>
+    <string name="spec_platform_code">Kod platformy</string>
+    <string name="spec_engine">Silnik</string>
+    <string name="spec_power">Moc</string>
+    <string name="spec_gearbox">Skrzynia biegów</string>
+    <string name="spec_carburetor">Gaźnik</string>
+    <string name="spec_ignition">Zapłon</string>
+    <string name="spec_oil">Olej silnikowy</string>
+    <string name="spec_tank">Pojemność baku (L)</string>
+    <string name="spec_electrical">Instalacja elektryczna</string>
+    <string name="spec_battery">Akumulator</string>
+    <string name="spec_main_fuse">Bezpiecznik główny</string>
+    <string name="spec_front_tire">Opona przednia</string>
+    <string name="spec_rear_tire">Opona tylna</string>
+    <string name="spec_front_pressure">Ciśnienie przód (bar)</string>
+    <string name="spec_rear_pressure">Ciśnienie tył (bar)</string>
+    <string name="spec_chain">Łańcuch</string>
+    <string name="spec_dimensions">Wymiary i udźwig</string>
+    <string name="spec_valve_clearance">Luz zaworowy</string>
+    <string name="spec_notes">Notatki</string>
+    <string name="spec_empty">—</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_save">Zapisz</string>
+    <string name="dialog_cancel">Anuluj</string>
+    <string name="dialog_edit_title">Edytuj: %1$s</string>
+    <string name="dialog_invalid_text">To pole nie może być puste.</string>
+    <string name="dialog_invalid_number">Podaj liczbę nieujemną (np. 1,3).</string>
+    <string name="mth_dialog_title">Licznik motogodzin</string>
+    <string name="mth_dialog_quick_add">Szybko dodaj</string>
+    <string name="mth_dialog_add">+%1$s</string>
+    <string name="mth_dialog_invalid_mth">Nieprawidłowe mth (0–100000).</string>
+    <string name="mth_dialog_invalid_km">Nieprawidłowy przebieg (0–1000000).</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Ustawienia</string>
+    <string name="settings_theme">Motyw</string>
+    <string name="theme_system">Automatyczny (wg systemu)</string>
+    <string name="theme_sun">Słońce — wysoki kontrast</string>
+    <string name="theme_night">Noc — Enduro OLED</string>
+    <string name="settings_offline_note">XB88 Rider działa w 100% offline. Bez kont, bez chmury — Twoje dane zostają w telefonie.</string>
+</resources>
