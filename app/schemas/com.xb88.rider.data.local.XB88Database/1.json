@@ -1,0 +1,234 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "24f4316708c774518b152d9261c8da8e",
+    "entities": [
+      {
+        "tableName": "bike_profile",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `model` TEXT NOT NULL, `platformCode` TEXT NOT NULL, `engine` TEXT NOT NULL, `power` TEXT NOT NULL, `gearbox` TEXT NOT NULL, `carburetor` TEXT NOT NULL, `ignition` TEXT NOT NULL, `oilSpec` TEXT NOT NULL, `tankCapacityL` REAL NOT NULL, `electricalSystem` TEXT NOT NULL, `batterySpec` TEXT NOT NULL, `mainFuse` TEXT NOT NULL, `frontTire` TEXT NOT NULL, `rearTire` TEXT NOT NULL, `frontPressureBar` REAL NOT NULL, `rearPressureBar` REAL NOT NULL, `chainSpec` TEXT NOT NULL, `dimensions` TEXT NOT NULL, `valveClearanceNote` TEXT NOT NULL, `currentMth` REAL NOT NULL, `currentKm` REAL NOT NULL, `notes` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "model",
+            "columnName": "model",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "platformCode",
+            "columnName": "platformCode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "engine",
+            "columnName": "engine",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "power",
+            "columnName": "power",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gearbox",
+            "columnName": "gearbox",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "carburetor",
+            "columnName": "carburetor",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ignition",
+            "columnName": "ignition",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "oilSpec",
+            "columnName": "oilSpec",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tankCapacityL",
+            "columnName": "tankCapacityL",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "electricalSystem",
+            "columnName": "electricalSystem",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "batterySpec",
+            "columnName": "batterySpec",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mainFuse",
+            "columnName": "mainFuse",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "frontTire",
+            "columnName": "frontTire",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rearTire",
+            "columnName": "rearTire",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "frontPressureBar",
+            "columnName": "frontPressureBar",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rearPressureBar",
+            "columnName": "rearPressureBar",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "chainSpec",
+            "columnName": "chainSpec",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dimensions",
+            "columnName": "dimensions",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "valveClearanceNote",
+            "columnName": "valveClearanceNote",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currentMth",
+            "columnName": "currentMth",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currentKm",
+            "columnName": "currentKm",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "notes",
+            "columnName": "notes",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "service_task",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `title` TEXT NOT NULL, `category` TEXT NOT NULL, `intervalMth` REAL NOT NULL, `intervalDays` INTEGER, `lastDoneMth` REAL NOT NULL, `lastDoneEpochMillis` INTEGER, `notes` TEXT NOT NULL, `isActive` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "category",
+            "columnName": "category",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "intervalMth",
+            "columnName": "intervalMth",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "intervalDays",
+            "columnName": "intervalDays",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastDoneMth",
+            "columnName": "lastDoneMth",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastDoneEpochMillis",
+            "columnName": "lastDoneEpochMillis",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "notes",
+            "columnName": "notes",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isActive",
+            "columnName": "isActive",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '24f4316708c774518b152d9261c8da8e')"
+    ]
+  }
+}
